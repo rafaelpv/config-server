@@ -14,7 +14,7 @@ spring:
       ddl-auto: none
     show-sql: false
 appointments-service:
-  companyId: 1
+  companyId: 2
 management:
   endpoints:
     web:
