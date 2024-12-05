@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: Appointments
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: myuser
+    password: mypassword
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+appointments-service:
+  companyId: 1
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+        - prometheus
